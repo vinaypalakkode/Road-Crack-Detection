@@ -1,6 +1,10 @@
-# Road-Crack-Detection
 
 
+![RI Logo](http://www-preview.ri.cmu.edu/images/site_images/ri_header_right.png)
+
+
+
+# Road-Crack-Detection 
 
 **Dependencies**
 
