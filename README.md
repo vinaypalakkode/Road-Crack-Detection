@@ -1,6 +1,6 @@
 
 
-![RI Logo](http://www.cs.cmu.edu/~pbarnum/ri_logo_crop.gif)
+![RI Logo](http://www-preview.ri.cmu.edu/images/site_images/ri_header_right.png)
 
 
 
