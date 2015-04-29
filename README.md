@@ -1,6 +1,6 @@
 
 
-![RI Logo](https://github.com/vinaypalakkode/Road-Crack-Detection/blob/master/web/ri_logo.gif)
+![RI Logo](http://www.cs.cmu.edu/~pbarnum/ri_logo_crop.gif)
 
 
 
