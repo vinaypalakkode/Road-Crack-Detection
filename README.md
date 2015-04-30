@@ -23,7 +23,7 @@ _Vinay Palakkode <vinaypalakode@cmu.edu>_
    
     Refer: [link]( http://stackoverflow.com/questions/7031126/switching-between-gcc-and-clang-llvm-using-cmake)
 
-2. **CMake** : To ensure portability we use cmake to generate the Makefiles
+2. [**CMake**](http://www.cmake.org/) : To ensure portability we use cmake to generate the Makefiles. Kindly install cmake version >= **2.6**
 
 3. **OpenCV** : We rely heavily on OpenCV libs for this project. Opencv 3.0 (beta)
 
