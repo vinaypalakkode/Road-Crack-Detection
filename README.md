@@ -10,8 +10,9 @@ _Vinay Palakkode <vinaypalakode@cmu.edu>_
 
 **Publications**
 
-**Project Wiki**
-
+[**Project Wiki**](https://github.com/vinaypalakkode/Road-Crack-Detection/wiki)
+ 
+  For detailed documentation on the codebase and canonical examples for each module, kindly refer the [project wiki](https://github.com/vinaypalakkode/Road-Crack-Detection/wiki).
 
 **Dependencies**
 
