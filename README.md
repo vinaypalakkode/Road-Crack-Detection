@@ -16,6 +16,10 @@ _Vinay Palakkode <vinaypalakode@cmu.edu>_
 **Dependencies**
 
 1. **Clang**   : If working with linux, kindly install clang as the prefered C/C++ compiler for this project is clang.
+  
+    `sudo apt-get install clang`
+
+You may have to update the default compiler from gcc to clang in case you wish you keep poth gcc and clang-llvm toolchains on your system 
 
 2. **CMake** : To ensure portability we use cmake to generate the Makefiles
 
