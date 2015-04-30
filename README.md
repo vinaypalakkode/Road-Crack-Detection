@@ -19,7 +19,9 @@ _Vinay Palakkode <vinaypalakode@cmu.edu>_
   
     `sudo apt-get install clang`
 
-You may have to update the default compiler from gcc to clang in case you wish you keep poth gcc and clang-llvm toolchains on your system 
+    You may have to update the default compiler from gcc to clang in case you wish you keep poth gcc and clang-llvm toolchains  on your system. Or you may play around with honors variables in your CMake settings. 
+   
+    Refer: [link]( http://stackoverflow.com/questions/7031126/switching-between-gcc-and-clang-llvm-using-cmake)
 
 2. **CMake** : To ensure portability we use cmake to generate the Makefiles
 
