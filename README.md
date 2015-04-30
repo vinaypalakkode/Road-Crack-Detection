@@ -25,9 +25,11 @@ _Vinay Palakkode <vinaypalakode@cmu.edu>_
 
 2. [**CMake**](http://www.cmake.org/) : To ensure portability we use cmake to generate the Makefiles. Kindly install cmake version >= **2.6**
 
-3. **OpenCV** : We rely heavily on OpenCV libs for this project. Opencv 3.0 (beta)
+3. [**OpenCV**](http://opencv.org/) : We rely heavily on OpenCV libs for this project. Opencv 3.0 (beta)
 
-4. **Boost** : We would soon replace the stl containers with boost containers pretty soon for better portability and robustness.
+4. [**Boost**](http://www.boost.org/) : We would soon replace the stl containers with boost containers pretty soon for better portability and robustness.
+
+5. [**libSVM**](http://www.csie.ntu.edu.tw/~cjlin/libsvm/) : A simple and handy library for support vector machines.
 
  
 
