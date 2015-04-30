@@ -4,11 +4,13 @@
 
 
 
-# Vision for Road Monitoring
+# Vision for Road Inspection
 
 _Vinay Palakkode <vinaypalakode@cmu.edu>_
 
 **Publications**
+
+ [Vision For Road Inspection](https://www.ri.cmu.edu/pub_files/2014/3/crack_detection_final.pdf)
 
 [**Project Wiki**](https://github.com/vinaypalakkode/Road-Crack-Detection/wiki)
  
