@@ -15,7 +15,7 @@ _Vinay Palakkode <vinaypalakode@cmu.edu>_
 
 **Dependencies**
 
-1. **Clang**   : If working with linux, kindly install clang as the prefered C/C++ compiler for this project is clang.
+1. [**Clang**](http://clang.llvm.org/)   : If working with linux, kindly install clang as the prefered C/C++ compiler for this project is clang.
   
     `sudo apt-get install clang`
 
