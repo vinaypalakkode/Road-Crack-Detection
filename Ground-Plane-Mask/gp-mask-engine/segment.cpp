@@ -92,8 +92,6 @@ image<rgb>* matToimg(cv::Mat input ){
   
   }
   
-
-
   return imPtr;
 
 }
@@ -110,10 +108,6 @@ int main(int argc, char **argv) {
 	
   printf("loading input image.\n");
 
-#if OLD
-  image<rgb> *input = loadPPM(argv[4]);
-#endif
-
   cv::Mat inp = imread(argv[4]);
   
   image<rgb> *input = matToimg(inp); 
@@ -122,20 +116,18 @@ int main(int argc, char **argv) {
   int num_ccs; 
   image<rgb> *seg = segment_image(input, sigma, k, min_size, &num_ccs); 
   
-  
-#if DEBUG  
-  savePPM(seg, argv[5]);
-#endif
+  Mat outImg  = imgToMat(seg);
+  Mat grayImg(outImg.rows,outImg.cols, CV_8UC1);
+ 
+ cvtColor(outImg,grayImg,CV_BGR2GRAY);
 
-  cv:Mat outImg = imgToMat(seg);
   imshow("output",outImg);
   waitKey(0);
-
-
 
   printf("got %d components\n", num_ccs);
   printf("done! uff...thats hard work.\n");
 
   return 0;
+
 }
 
