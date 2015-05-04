@@ -19,6 +19,10 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
 #ifndef DISJOINT_SET
 #define DISJOINT_SET
 
+#include <iostream>
+
+using namespace std;
+
 // disjoint-set forests using union-by-rank and path compression (sort of).
 
 typedef struct {
@@ -36,10 +40,31 @@ public:
   int size(int x) const { return elts[x].size; }
   int num_sets() const { return num; }
 
+  void printUniverse();
+ 
+
+
 private:
   uni_elt *elts;
   int num;
 };
+
+
+void universe::printUniverse(){
+
+
+  for(int i = 0; i < this->num; i++  ){
+  
+     std::cout<<"========[ "<< i<<" ]========"<<std::endl;
+     std::cout<<"Rank: "<<elts[i].rank<<std::endl;
+     std::cout<<"P: "<<elts[i].p<<std::endl;
+     std::cout<<"Size: "<<elts[i].size<<std::endl;
+  
+  }
+
+
+}
+
 
 universe::universe(int elements) {
   elts = new uni_elt[elements];
@@ -55,6 +80,7 @@ universe::~universe() {
   delete [] elts;
 }
 
+
 int universe::find(int x) {
   int y = x;
   while (y != elts[y].p)
@@ -64,10 +90,13 @@ int universe::find(int x) {
 }
 
 void universe::join(int x, int y) {
+  
   if (elts[x].rank > elts[y].rank) {
     elts[y].p = x;
     elts[x].size += elts[y].size;
+
   } else {
+  
     elts[x].p = y;
     elts[y].size += elts[x].size;
     if (elts[x].rank == elts[y].rank)

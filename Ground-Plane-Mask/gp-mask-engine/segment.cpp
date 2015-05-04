@@ -98,30 +98,43 @@ image<rgb>* matToimg(cv::Mat input ){
 
 int main(int argc, char **argv) {
 
-
   // sanity check for correct input
   usage(argv,argc);
 
   float sigma = atof(argv[1]);
   float k = atof(argv[2]);
   int min_size = atoi(argv[3]);
+  universe* u;
 	
   printf("loading input image.\n");
 
   cv::Mat inp = imread(argv[4]);
   
+  imshow("input",inp);
+
   image<rgb> *input = matToimg(inp); 
 
   printf("processing\n");
+
   int num_ccs; 
-  image<rgb> *seg = segment_image(input, sigma, k, min_size, &num_ccs); 
-  
+  image<rgb> *seg = segment_image(input, sigma, k, min_size, &num_ccs,u); 
+
   Mat outImg  = imgToMat(seg);
   Mat grayImg(outImg.rows,outImg.cols, CV_8UC1);
  
- cvtColor(outImg,grayImg,CV_BGR2GRAY);
+  cvtColor(outImg,grayImg,CV_BGR2GRAY);
 
-  imshow("output",outImg);
+  imshow("output", grayImg);
+ 
+
+
+
+
+
+
+
+
+
   waitKey(0);
 
   printf("got %d components\n", num_ccs);

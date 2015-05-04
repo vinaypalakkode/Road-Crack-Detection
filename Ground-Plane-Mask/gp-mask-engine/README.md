@@ -1,1 +1,1 @@
-TO DO: use opencv based image read and write
+TO DO: to choose the required contour

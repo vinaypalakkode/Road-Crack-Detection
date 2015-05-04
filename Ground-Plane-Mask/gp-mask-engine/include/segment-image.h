@@ -57,7 +57,7 @@ static inline float diff(image<float> *r, image<float> *g, image<float> *b,
  * num_ccs: number of connected components in the segmentation.
  */
 image<rgb> *segment_image(image<rgb> *im, float sigma, float c, int min_size,
-			  int *num_ccs) {
+    int *num_ccs, universe* myUniverse) {
   int width = im->width();
   int height = im->height();
 
@@ -145,8 +145,12 @@ image<rgb> *segment_image(image<rgb> *im, float sigma, float c, int min_size,
     }
   }  
 
+  u->printUniverse();
+
+  myUniverse = u;
+
   delete [] colors;  
-  delete u;
+  //delete u;
 
   return output;
 }
