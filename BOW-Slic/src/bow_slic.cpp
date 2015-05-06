@@ -334,6 +334,7 @@ void BagOfWordsSlic::GenerateSuperpixels(InputArray _input_image, OutputArray _s
             x_upper_limit = min(centroid_x + S_,im_width_);
 
             for(int pixel_y = y_lower_limit; pixel_y < y_upper_limit; pixel_y++){
+
                 lab_image_row = lab_image.ptr<Vec3b>(pixel_y);
                 distance_matrix_row = distance_matrix_.ptr<double>(pixel_y);
                 visual_word_histogram_row = visual_word_histogram_matrix_.ptr<Vec50d>(pixel_y);

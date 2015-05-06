@@ -34,3 +34,7 @@
 *.ptx
 *.cubin
 *.fatbin
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+CMakeFiles/
