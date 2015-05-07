@@ -1,3 +1,8 @@
+// Version  : Srivatsan Varadhrajan
+// Version 1: Vinay Palakkode
+//
+//
+//
 #include "../include/bow_slic.hpp"
 
 Point four_neighbors[] = {Point(-1,0),

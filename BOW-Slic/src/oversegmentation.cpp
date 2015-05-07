@@ -1,3 +1,12 @@
+//
+// Version 0: Srivatsan Varadhrajan
+// Version 1: Vinay Palakkode
+//
+//
+//
+//
+
+
 #include "../include/oversegmentation.hpp"
 
 /*------------------------------------------------------------*/

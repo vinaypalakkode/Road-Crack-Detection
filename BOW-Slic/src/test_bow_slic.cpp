@@ -3,6 +3,7 @@
  *
  * Written by: Srivatsan Varadharajan.
  *
+ * Modified by: Vinay Palakkode
  * Testing file for texture_slic function, written in texture_slic.cpp and texture_slic.hpp
  * 
  */
